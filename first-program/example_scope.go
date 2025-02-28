@@ -1,8 +1,3 @@
-// Package-Level Scope
-package main
-
-import "fmt"
-
 // Package-level variables
 var (
 	a = 10
