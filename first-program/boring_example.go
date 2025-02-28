@@ -11,9 +11,10 @@ func printNum(num int) {
 	fmt.Println(num)
 }
 
-func add(x int, y int) int {
-	res := x + y
+func add(a int, b int) int {
+	res := a + b
 	printNum(res)
+	return res
 }
 
 func main() {
