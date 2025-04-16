@@ -29,6 +29,7 @@ func main() {
 	// fmt.Println(cap(s1)) //
 
 	var s []int //empty slice or nill slice
+	s = append(s, 1, 2, 9)
 	fmt.Println(s)
 }
 
