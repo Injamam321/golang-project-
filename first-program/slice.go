@@ -28,9 +28,23 @@ func main() {
 	// fmt.Println(len(s1)) //length ->2
 	// fmt.Println(cap(s1)) //
 
-	var s []int //empty slice or nill slice
-	s = append(s, 1, 2, 9)
-	fmt.Println(s)
+	// var s []int //empty slice or nill slice
+	// s = append(s, 1, 2, 9)
+	// fmt.Println(s)
+
+	var x []int //empty slice or nill slice
+	x = append(x, 1)
+	x = append(x, 2)
+	x = append(x, 3)
+
+	y := x
+
+	x = append(x, 4)
+	y = append(y, 5)
+
+	x[0] = 10
+	fmt.Println(x)
+	fmt.Println(y)
 }
 
 /*
