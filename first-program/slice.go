@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
+
 	// s := []int{1, 2, 3, 4, 5, 6} //slice literal
 	// fmt.Println("slice:", s, "len:", len(s), "cap:", cap(s))
 
@@ -43,8 +44,10 @@ func main() {
 	y = append(y, 5)
 
 	x[0] = 10
-	fmt.Println(x)
-	fmt.Println(y)
+
+	fmt.Println(x) //[10, 2, 3, 5]
+
+	fmt.Println(y) // [10, 2, 3, 5]
 }
 
 /*
@@ -68,4 +71,5 @@ main=func(){...}
 4.make function with len
 5.make function with len & capacity
 6.empty slice or nil slice
+7.slice underlying array rule => 1024 -> 100% increase, 1024 < 25% increase
 */
